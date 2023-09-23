@@ -5,9 +5,11 @@
   box-sizing: border-box;
   padding: 0;
 }
+
 #main {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* css header */
 #header {
   position: fixed;
@@ -18,29 +20,35 @@
   background-color: rgba(0, 0, 0, 1);
   opacity: 0.8;
 }
+
 .text-header {
   transition: transform 0.3s ease;
 }
+
 .text-header:hover {
   border-bottom: 2px solid #7bb1ff !important;
   transform: scale(1.2);
 }
+
 /* css content */
-#content {
-}
+#content {}
+
 .news-selection {
   margin: 0px 105px;
   padding: 45px 0px;
 }
+
 .caption-news {
   display: flex;
   justify-content: space-between;
 }
+
 .news-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .news-item {
   position: relative;
   display: flex;
@@ -50,6 +58,7 @@
   border: none;
   /* transition: changeForm 0.5s ease; */
 }
+
 /* .news-item:hover {
   text-decoration: solid;
 } */
@@ -60,6 +69,7 @@
   border-radius: 18px;
   transition: transform 0.5s ease;
 }
+
 .news-text-content {
   position: absolute;
   width: 80%;
@@ -68,18 +78,22 @@
   bottom: 0;
   margin: 0px 0px 30px 20px;
 }
+
 .image-news:hover {
   transform: scale(1.05);
 }
+
 .text-caption {
   font-size: 13px;
 }
+
 .sub-text {
   font-size: 12px;
   color: #ffff;
   width: 100%;
   overflow: hidden;
 }
+
 .btn-more {
   position: relative;
   border: none;
@@ -87,6 +101,7 @@
   padding: 0px 35px;
   border-radius: 35px;
 }
+
 .more-btn {
   border: none;
   color: white;
@@ -96,6 +111,7 @@
   border-radius: 35px;
   position: relative;
 }
+
 .btn-more::before {
   content: "";
   position: absolute;
@@ -108,6 +124,7 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .more-btn::before {
   content: "";
   position: absolute;
@@ -120,57 +137,68 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .btn-more:hover::before {
   opacity: 1;
   animation: border-transition 700ms forwards;
 }
+
 .more-btn:hover::before {
   opacity: 1;
   animation: change-more 700ms forwards;
 }
+
 @keyframes border-transition {
   0% {
     opacity: 0;
     transform: scale(0);
   }
+
   50% {
     border: 3px dashed blue;
     opacity: 0.8;
     transform: scale(1);
   }
+
   100% {
     border: 3px solid blue;
     opacity: 1;
     transform: scale(1);
   }
 }
+
 @keyframes change-more {
   0% {
     opacity: 0;
     transform: scale(0);
   }
+
   50% {
     border: 3px dashed white;
     opacity: 0.8;
     transform: scale(1);
   }
+
   100% {
     border: 3px solid white;
     opacity: 1;
     transform: scale(1);
   }
 }
-.background-sub {
-}
+
+.background-sub {}
+
 .image-nightsky {
   position: relative;
   width: 100%;
 }
+
 .night-sky {
   width: 100%;
   height: 100%;
   transition: transform 1s ease;
 }
+
 .logo-backgroud {
   position: absolute;
   top: 50%;
@@ -180,12 +208,15 @@
   z-index: 1;
   transition: width 1s ease;
 }
+
 .logo-backgroud:hover {
   width: 22%;
 }
+
 .night-sky:hover {
   transform: scale(1.05);
 }
+
 .product-company {
   display: flex;
   flex-wrap: wrap;
@@ -193,17 +224,21 @@
   margin: 0px 105px;
   padding: 15px 0 0 0;
 }
+
 .product-item {
   text-decoration: none;
 }
+
 .item-container {
   width: 645px;
   height: 480px;
 }
+
 .image-product {
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
+
 .item-footer {
   display: flex;
   align-items: center;
@@ -213,25 +248,30 @@
   border-radius: 0 0 15px 15px;
   background-color: rgba(0, 0, 0, 0.05);
 }
+
 .product-logo {
   width: 60px;
   height: 60px;
   border-radius: 8px;
 }
+
 .product-text {
   width: 300px;
   overflow: hidden;
   color: #000;
   margin: 6px 0 0 16px;
 }
-.product-text > h3 {
+
+.product-text>h3 {
   font-size: 16px;
   margin-bottom: 0;
 }
-.product-text > h4 {
+
+.product-text>h4 {
   font-size: 13px;
   margin-top: 4px;
 }
+
 .product-btn-more {
   font-size: 13px;
   width: 150px;
@@ -242,16 +282,20 @@
   background-color: #ccc;
   border-radius: 35px;
 }
+
 .product-item .image-product {
   transition: transform 300ms ease-in-out;
 }
+
 .product-item:hover .image-product {
   transform: scale(1.01);
 }
+
 .product-item .product-btn-more {
   border: 3px dashed #ccc;
   transition: border-style 0.8s ease-in-out, border-color 0.8s ease-in-out;
 }
+
 .product-item:hover .product-btn-more {
   border: 3px solid blue;
 }
