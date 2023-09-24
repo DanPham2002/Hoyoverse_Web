@@ -191,6 +191,15 @@
 .image-nightsky {
   position: relative;
   width: 100%;
+  height: 250px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url(/assets/images/layer-0.2e7f026.png), url(/assets/images/backgroud-sky.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 60%, 100%;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .night-sky {
@@ -306,6 +315,8 @@
   height: 680px;
   background-image: url(/assets/images/BMrmUGk.jpg);
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .footer-info {
